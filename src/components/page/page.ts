@@ -47,5 +47,8 @@ export class PageComponent
     const item = new PageItemComponent();
     item.addChild(section);
     item.attachTo(this.element, 'beforeend');
+    item.setOnCloseListener(() => {
+      item.removeFrom(this.element);
+    });
   }
 }
