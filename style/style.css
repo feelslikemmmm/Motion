@@ -60,14 +60,14 @@ body {
 }
 
 .banner {
-  background: var(--bg-main-color);
-  border-bottom: 1px solid var(--bg-accent-color);
+  background: #ffffff;
+  /* border-bottom: 1px solid var(--bg-accent-color); */
   text-align: center;
 }
 
 .banner__title {
   margin: 20px;
-  color: var(--accent-color);
+  color: black;
 }
 
 .control-panel {
@@ -85,34 +85,40 @@ body {
   font-weight: 600;
   font-size: 0.8rem;
   color: white;
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  border-radius: 2px;
+  background-color: #3182f6;
+  border: 0 solid transparent;
+  /* border-color: #3182f6; */
+  border-radius: 4px;
 }
 
 .document {
   height: 100%;
   overflow-y: auto;
-  background-color: var(--document-bg-color);
+  background-color: #f9fafb;
   /* Firefox */
   scrollbar-width: 6px;
-  scrollbar-color: var(--bg-accent-color);
-  scrollbar-face-color: var(--accent-color);
+  scrollbar-color: #ffffff;
+  scrollbar-face-color: #3182f6;
 }
 
 .document::-webkit-scrollbar {
   /* Safari and Chrome */
-  background-color: var(--bg-accent-color);
+  background-color: #ffffff;
   width: 6px;
 }
 
 .document::-webkit-scrollbar-thumb {
   /* Safari and Chrome */
-  background-color: var(--accent-color);
+  background-color: lightgray;
 }
 
 .footer {
-  background: var(--bg-main-color);
-  border-top: 1px solid var(--border-color);
+  background: #ffffff;
   text-align: center;
+}
+
+.footer > p {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(107, 118, 132);
 }
